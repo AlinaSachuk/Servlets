@@ -1,0 +1,13 @@
+h1.hi {
+    color: pink;
+    background-color: darkred;
+}
+h1 {
+    color: pink;
+    background-color: grey;
+}
+h2 {
+    color: violet;
+    margin-top: 50px;
+    margin-left: 100px;
+}
