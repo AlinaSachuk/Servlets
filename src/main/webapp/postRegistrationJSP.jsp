@@ -13,8 +13,8 @@
 <body>
 <h3>You registered successfully!</h3>
 <% FileWriter writer = new FileWriter("/Users/alina/Documents//Register.txt");
-writer.write("Your login: " + (request.getParameter("login")) + "\n");
-writer.write("Your password: " + (request.getParameter("password")));
-writer.close();%>
+    writer.write("Your login: " + (request.getParameter("login")) + "\n");
+    writer.write("Your password: " + (request.getParameter("password")));
+    writer.close();%>
 </body>
 </html>

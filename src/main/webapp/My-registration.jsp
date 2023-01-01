@@ -14,7 +14,7 @@
 <form action="postRegistrationJSP.jsp">
     <h2>Login: <input name="login" required src="/Users/alina/Documents//Register.txt"/></h2>
     <h2>Password: <input name="password" type="password" required/></h2>
-    <h1><input type="submit" value="register" ></h1>
+    <h1><input type="submit" value="register"></h1>
 </form>
 </body>
 </html>
