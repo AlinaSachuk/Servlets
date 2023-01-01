@@ -13,6 +13,6 @@
 <body>
 Hello World!
 <%= new Date()%> <br>
-Hello, <%= request.getParameter("name")%>!
+Hello, <%= request.getParameter("name")%>! Welcome to JSP
 </body>
 </html>

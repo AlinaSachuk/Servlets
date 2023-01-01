@@ -14,6 +14,6 @@
 <%User user = (User) request.getAttribute("keyUser");%>
 <h1>Hello dear, <%= user.getName() %>.</h1>
 <h2> Your salary per month - <%= user.getSalaryPerMonth()%>.</h2>
-<h3>Enjoy it! Happy New Year!!!</h3>
+<h3>Enjoy it! Happy New Year!</h3>
 </body>
 </html>
