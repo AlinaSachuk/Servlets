@@ -8,18 +8,23 @@ public class Main {
         //Statement statement = connection.createStatement();
         //boolean result = statement.execute("SELECT * FROM telephone");
         //System.out.println(result);
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM telephone WHERE id<?");
-        statement.setInt(1,10);
-        ResultSet resultSet = statement.executeQuery();
-        ArrayList<Telephone> list = new ArrayList<Telephone>();
-        while (resultSet.next()){
-            Telephone telephone = new Telephone();
-            telephone.setId(resultSet.getInt("id"));
-            telephone.setModel(resultSet.getString("model"));
-            telephone.setColor(resultSet.getString("color"));
-            list.add(telephone);
-        }
-        System.out.println(list);
+        //PreparedStatement statement = connection.prepareStatement("SELECT * FROM telephone WHERE id<?");
+        //statement.setInt(1,10);
+        //ResultSet resultSet = statement.executeQuery();
+        //ArrayList<Telephone> list = new ArrayList<>();
+        //while (resultSet.next()){
+        //    Telephone telephone = new Telephone();
+        //   telephone.setId(resultSet.getInt("id"));
+        //    telephone.setModel(resultSet.getString("model"));
+        //    telephone.setColor(resultSet.getString("color"));
+        //    list.add(telephone);
+        //}
+        //System.out.println(list);
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO telephone (model, color) VALUES (?,?)");
+        statement.setString(1, "horizont");
+        statement.setString(2, "green");
+        int count = statement.executeUpdate();
+        System.out.println(count);
         connection.close();
     }
 }
