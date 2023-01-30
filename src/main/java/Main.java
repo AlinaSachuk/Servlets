@@ -21,8 +21,8 @@ public class Main {
         //}
         //System.out.println(list);
         PreparedStatement statement = connection.prepareStatement("INSERT INTO telephone (model, color) VALUES (?,?)");
-        statement.setString(1, "horizont");
-        statement.setString(2, "green");
+        statement.setString(1, "sony");
+        statement.setString(2, "black");
         int count = statement.executeUpdate();
         System.out.println(count);
         connection.close();
